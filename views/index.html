@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>{{title}}</h1>
+        <h1>{{title | safe}}</h1>   < 뒤에 safe를 쳐줘야 app.js에서 <strong>한게 제대로 반영됨
+        <h1>{{number}}</h1>
+
+        <a href="/member">회원관리</a>
+        <ul>
+            {% for item in fruits %}
+            <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+        
+    </body>
+</html> -->
+
+
+{% include "include/header.html" %}   <!-- include 폴더안에 header.html을 헤더로 사용-->
+
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>첫페이지</h1>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">신서영의 홈페이지에 오신것을 환영합니다.</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+{% include "include/footer.html" %}
+  
